@@ -333,9 +333,10 @@ a {
 }
 
 .language__toggler  {
-  display: flex;
-  align-items: center;
-  padding: 6px 22px 6px 0;
+  min-width: 68px;
+  position: relative;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -345,13 +346,15 @@ a {
 
 .language__toggler::after {
   content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  right: 23px;
   width: 7px;
   height: 3px;
   background-image: url(../img/lang-toggler-icon.svg);
   background-size: cover;
-  margin-left: 6px;
   transform: rotateX(180deg);
-  transition: transform 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .language__toggler--open::after {
@@ -372,7 +375,7 @@ a {
   border-radius: 3px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.2s ease;
 }
 
 .language__list--open {
@@ -388,6 +391,10 @@ a {
   opacity: 0.6;
 }
 
+.language__link:focus {
+  outline: none;
+}
+
 .gaming {
   display: flex;
   align-items: center;
@@ -396,6 +403,7 @@ a {
 
 .gaming__item {
   display: flex;
+  flex-shrink: 0;
 }
 
 .gaming__item:hover {
