@@ -28,6 +28,12 @@ if (elLangToggler) {
     elLangList.classList.toggle(modifiers.list);
   });
 }
+// FUNCTION
+function  removeActiveClass() {
+  elNav.classList.remove(modifiers.nav);
+  elNavbarTrasparent.classList.remove(modifiers.transparent);
+  document.body.classList.remove(modifiers.overflow);
+}
 
 elLangLink.forEach(function (link, index){
   link.addEventListener("click", function () {
@@ -47,8 +53,10 @@ elNavbar.forEach(function (navbar, index){
 
 elNavLink.forEach(function (navlink, index){
   navlink.addEventListener("click", function (){
-    elNav.classList.toggle(modifiers.nav);
-    elNavbarTrasparent.classList.toggle(modifiers.transparent);
-    document.body.classList.toggle(modifiers.overflow);
+    removeActiveClass();
   });
+});
+
+elNavbarTrasparent.addEventListener("click", function (){
+  removeActiveClass();
 });

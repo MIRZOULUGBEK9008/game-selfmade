@@ -586,7 +586,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 100px 20px 50px 0;
+    padding: 100px 20px 50px 20px;
     width: 100%;
     background-color:  var(--black);
     z-index: 100;
@@ -608,6 +608,8 @@ a {
     align-items: flex-end;
     border-top: 1px solid var(--white-05);
     border-bottom: 1px solid var(--white-05);
+    height: 272px;
+    overflow: auto;
   }
 
   .site-header__sitenav .sitenav__item {
@@ -622,9 +624,10 @@ a {
 
   .site-header__sitenav .sitenav__link {
     width: 100%;
-    font-size: 30px;
+    font-size: 24px;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-right: 10px;
   }
 
   .site-header__sitenav .sitenav__link:hover {
