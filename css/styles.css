@@ -324,6 +324,7 @@ a {
 }
 
 .language a {
+  display: inline-block;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 12px;
@@ -381,6 +382,14 @@ a {
 .language__list--open {
   opacity: 1;
   pointer-events: all;
+}
+
+.language__item {
+  width: 100%;
+}
+
+.language__link {
+  width: 100%;
 }
 
 .language__link:hover {
