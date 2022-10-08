@@ -36,22 +36,25 @@
           <img class="logo__img" src="img/logo.png" alt="SOS logo" width="55" height="55" srcset="img/logo.png 1x, img/logo@2x.png 2x">
         </a>
         <!-- SITENAV  -->
-        <nav class="sitenav site-header__sitenav">
+        <nav class="sitenav site-header__sitenav js-nav">
+          <button class="navbar site-header__navbar navbar--cancel js-navbar" type="button">
+            <img class="navbar__img" src="img/xmark-solid.svg" alt="Navbar icon" width="30" height="30">
+          </button>
           <ul class="sitenav__list">
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">Main</a>
+              <a class="sitenav__link" href="#">Main</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">About</a>
+              <a class="sitenav__link" href="#about">About</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">Game features</a>
+              <a class="sitenav__link" href="#feautures">Game features</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">System requirements</a>
+              <a class="sitenav__link" href="#system-requrements">System requirements</a>
             </li>
             <li class="sitenav__item">
-              <a href="#" class="sitenav__link">Quotes</a>
+              <a class="sitenav__link" href="#quotes">Quotes</a>
             </li>
           </ul>
         </nav>
@@ -79,11 +82,15 @@
               <img class="gaming__img" src="img/steam.svg" alt="Steam logo" width="30" height="30">
             </a>
           </div>
+          <!-- BUTTON  -->
+          <button class="navbar site-header__navbar js-navbar" type="button">
+            <img class="navbar__img" src="img/navbar.svg" alt="Navbar icon" width="23" height="17">
+          </button>
         </div>
       </div>
     </header>
     <!-- HERO  -->
-    <section class="hero">
+    <section class="hero hero-header-wrapper__hero">
       <div class="container hero__container">
         <div class="hero__content">
           <h1 class="hero__title">Survive at all costs</h1>
@@ -97,6 +104,9 @@
       </div>
     </section>
   </section>
+
+  <button class="navbar  navbar--transparent js-navbar-transparent" type="button">
+  </button>
 
   <script src="js/main.js"></script>
 </body>
